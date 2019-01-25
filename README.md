@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Node.js with MongoDB Example
 
 <img src=https://i.imgur.com/eDNZeqh.png alt='Swagger Page of that application' title='Swagger Page of that application'/>
@@ -18,6 +17,3 @@
 ### Development with Watch Compiler
 
 - Run project - `npm run dev`
-=======
-# azure-ci
->>>>>>> 5c6b85b9b59ed9ee9d3d61bfb9ab20a5069c38b4
