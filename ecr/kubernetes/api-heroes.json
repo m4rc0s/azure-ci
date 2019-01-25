@@ -1,0 +1,32 @@
+{
+    "apiVersion":"v1",
+    "kind":"Pod",
+    "metadata": {
+        "name":"api-heroes",
+        "labels":{
+            "app":"api-heroes",
+            "version":"v1"
+        }
+    },
+    "spec": {
+        "containers": [
+            {
+                "name":"api-heroes",
+                "image":"expressivecode/api-heroes-mongo",
+                "ports": [{
+                    "containerPort":4000
+                }],
+                "env":[
+                    {
+                        "name":"MONGO_URL",
+                        "value":"127.17.0.7"
+                    },
+                    {
+                        "name":"PORT",
+                        "value": "4000"
+                    }
+                ]
+            }
+        ]
+    }
+}

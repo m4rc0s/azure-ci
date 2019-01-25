@@ -1,0 +1,32 @@
+{
+    "apiVersion":"v1",
+    "kind":"Pod",
+    "metadata": {
+        "name":"api-heroes-mongodb",
+        "labels":{
+            "app":"api-heroes-mongodb",
+            "version":"v1"
+        }
+    },
+    "spec": {
+        "containers": [
+            {
+                "name":"api-heroes-app",
+                "image":"expressivecode.azurecr.io/api-heroes-mongodb",
+                "ports": [{
+                    "containerPort":3000
+                }],
+                "env":[
+                    {
+                        "name":"MONGO_URL",
+                        "value":"mongodb"
+                    },
+                    {
+                        "name":"PORT",
+                        "value": "3000"
+                    }
+                ]
+            }
+        ]
+    }
+}
