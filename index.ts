@@ -21,7 +21,7 @@ server.connection({ port });
       register: HapiSwagger,
       options: {
         info: {
-          title: 'Eh Noix! [Again] Node.js with MongoDB Example - Erick Wendel',
+          title: 'Eh Noix! [Again] Node.js with MongoDB Example - Erick Wendel - Azure V1',
           version: '3.0',
         },
       },
